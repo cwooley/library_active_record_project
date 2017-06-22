@@ -23,6 +23,8 @@ ActiveRecord::Schema.define(version: 5) do
   create_table "books_users", force: :cascade do |t|
     t.integer "book_id"
     t.integer "user_id"
+    t.boolean "returned?", default: false
+    t.string "due_date"
   end
 
   create_table "catagories", force: :cascade do |t|
