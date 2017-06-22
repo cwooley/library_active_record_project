@@ -1,4 +1,4 @@
-class CreateBooksUsers < ActiveRecord::migration[5.0]
+class CreateBooksUsers < ActiveRecord::Migration[5.0]
   def change
     create_table :books_users do |t|
       t.integer :book_id
